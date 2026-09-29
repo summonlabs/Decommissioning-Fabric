@@ -1,0 +1,21 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+set(DecommissioningFabric_VERSION "@PROJECT_VERSION@")
+
+include("${CMAKE_CURRENT_LIST_DIR}/DecommissioningFabricTargets.cmake")
+
+# Compiler feature requirements are carried on the imported target itself, but
+# a consumer must be able to compile C++20 headers, so state it explicitly and
+# fail early with an actionable message rather than deep inside a compile.
+set(_df_required_cxx_standard 20)
+if(DEFINED CMAKE_CXX_STANDARD AND CMAKE_CXX_STANDARD LESS _df_required_cxx_standard)
+    set(DecommissioningFabric_FOUND FALSE)
+    set(DecommissioningFabric_NOT_FOUND_MESSAGE
+        "DecommissioningFabric requires CMAKE_CXX_STANDARD >= ${_df_required_cxx_standard} (found ${CMAKE_CXX_STANDARD}).")
+    return()
+endif()
+unset(_df_required_cxx_standard)
+
+check_required_components(DecommissioningFabric)

@@ -1,0 +1,51 @@
+# Build trees
+/build/
+/out/
+/artifacts/
+cmake-build-*/
+CMakeUserPresets.json
+
+# CMake working state
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+install_manifest.txt
+Makefile
+*.ninja
+.ninja_deps
+.ninja_log
+compile_commands.json
+*.vcxproj
+*.vcxproj.filters
+*.sln
+
+# Compiler / linker output
+*.obj
+*.o
+*.lo
+*.a
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.idb
+*.dll
+*.exe
+*.so
+*.dylib
+*.dSYM/
+
+# Test / tool scratch
+/scratch/
+*.dfab
+*.tmp
+
+# Editors
+.vs/
+.vscode/
+.idea/
+*.swp
+*~

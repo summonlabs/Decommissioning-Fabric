@@ -1,0 +1,22 @@
+# Deterministic line endings and diff behaviour for a cross-platform C++ tree.
+* text=auto eol=lf
+
+*.cpp        text eol=lf
+*.cc         text eol=lf
+*.cxx        text eol=lf
+*.hpp        text eol=lf
+*.h          text eol=lf
+*.inl        text eol=lf
+*.txt        text eol=lf
+*.cmake      text eol=lf
+*.md         text eol=lf
+*.json       text eol=lf
+*.yml        text eol=lf
+CMakeLists.txt text eol=lf
+
+*.ps1        text eol=crlf
+*.sln        text eol=crlf
+*.vcxproj    text eol=crlf
+
+*.png        binary
+*.ico        binary
