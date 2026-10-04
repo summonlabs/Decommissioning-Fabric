@@ -1,7 +1,5 @@
 # Decommissioning Fabric
 
-**DCCP repository 34 of 72. Tranche 5 - Physical Fleet Lifecycle.**
-
 Decommissioning Fabric is the governed retirement decision layer of the Data
 Center Control Plane. It answers one question, and refuses to answer it with
 anything less than evidence:
